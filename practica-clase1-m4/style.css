@@ -1,0 +1,66 @@
+/* Estilos práctica CSS */
+body{
+  background-color: #ffeb3b21;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+
+}
+header {
+    padding: 20px;
+    text-align: center;
+}
+h1, h2, h3, h4, h5 {
+    color:#FF9800;
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 20px;
+}
+ul{
+    padding: 20px;
+    list-style-type: none;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #FF9800;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: transparent;
+}
+label {
+    font-size: 18px;
+    color: #FF9800;
+}
+button {
+    background-color: #FF9800;
+    color:white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 13px;
+    border: 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cont{
+    background-color: #18161614;
+    width: 500px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+footer {
+    background-color:  #FF9800;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+
