@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ejercicio práctico Clase 2 – Módulo 4</title>
+</head>
+
+<body>
+    <header>
+        <h2>Implementación de MVC en JavaScript </h2>
+        <p>Implementar una mini aplicación de tareas (To-Do) con el patrón MVC usando HTML + CSS + JavaScript sin frameworks.</p>
+    </header>
+   <div class="container">
+        <div class="col-md-6 cont"> 
+            <h3>Lista de Tareas</h3>
+                <div class="input-area">
+                    <input type="text" id="noteInput" placeholder="Añadir nueva tarea">
+                    <button id="addButton">Agregar</button>
+                </div>
+        </div>
+        <div class="col-md-6"> 
+            <ul id="noteList">
+               <!--Aqui aparecen la lista de tareas a realizar-->
+            </ul>
+        </div>
+        
+        
+    </div>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
+
+
+</body>
+</html>
