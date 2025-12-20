@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio Práctico Clase 4 (MVC en JS) – Módulo 4</title>
+</head>
+
+<body>
+ <body>
+    <div class="container">
+        <header>
+           <h1>Gestión de Estudiantes</h1> 
+           <p>Aplicando el patrón de diseño **MVC** usando **JavaScript nativo**, sin frameworks.</p>
+        </header>
+        <!-- Formulario de Agregar/Editar Estudiante -->
+        <div class="cont-form">
+            <form id="studentForm" class="form-e">
+                <h4>Captura los siguientes datos:</h4>
+                <input type="hidden" id="studentId">
+                <input type="text" id="name" placeholder="Nombre" required>
+                <input type="text" id="course" placeholder="Curso" required>
+                <input type="number" id="grade" placeholder="Calificación" min="5" max="10" required>
+                <button type="submit" id="formSubmitBtn" class="btn-form">Agregar Estudiante</button>
+            </form>
+        </div>
+
+        <!-- Formulario de Búsqueda y Filtrado -->
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre o curso...">
+            <select id="statusFilter">
+                <option value="all">Todos</option>
+                <option value="aprobado">Aprobados</option>
+                <option value="reprobado">Reprobados</option>
+            </select>
+        </div>
+          <!-- Tabla donde se muestran los datos de los estudiantes-->
+        <div>
+             <table>
+                <thead class="cont-head">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Curso</th>
+                        <th>Calificación</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList" class="studentList">
+                        
+                </tbody>
+             </table>
+        </div>
+        
+
+    </div>
+    <script src="src/services/storage.js"></script>
+    <script src="src/model.js"></script>
+    <script src="src/view.js"></script>
+    <script src="src/controller.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
